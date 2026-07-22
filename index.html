@@ -486,6 +486,7 @@ select.feld{
     <div style="display:flex;align-items:center;gap:14px">
       <div class="marke">Daily<span>Do</span></div>
       <button class="knopf stumm" id="wahl-abmelden" style="margin-left:auto;padding:8px 14px;font-size:13px">Abmelden</button>
+      <button class="knopf stumm" id="wahl-diagnose" style="padding:8px 14px;font-size:13px" title="Verbindung und Zugriffe prüfen">Diagnose</button>
     </div>
     <h1 style="font-size:25px;font-weight:800;margin-top:30px;letter-spacing:-.4px">Welche Firma?</h1>
     <p style="color:var(--muted);font-size:14.5px;margin-top:6px" id="wahl-untertitel"></p>
@@ -515,6 +516,11 @@ select.feld{
       <button class="knopf stumm" id="leiste-schalter" style="padding:7px 11px">☰</button>
       <div class="kopf-titel" id="kopf-titel"></div>
       <div class="kopf-rechts">
+        <!-- Punkt zeigt den Datenbank-Zustand, Klick öffnet die Diagnose. -->
+        <button class="wechsler" id="diagnose" title="System-Diagnose">
+          <span class="punkt" id="db-punkt"></span>
+          Diagnose
+        </button>
         <button class="wechsler" id="wechsler">
           <span class="punkt" id="wechsler-punkt"></span>
           <span id="wechsler-name"></span>
